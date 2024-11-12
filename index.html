@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD5-Final Drilling</title>
+    <link rel="icon" href="./assets/img/dv.svg">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+</head>
+
+
+
+<body id="estiloBody" onload="asignarEventos()">
+
+    <!--NAVBAR-->
+    <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="./assets/img/dv.svg" alt="Star Wars" width="50" height="50"> <!--https://www.svgrepo.com/svg/440485/darth-vader-->
+     
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link colorRojo" id="divPopulares">Personajes Populares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorVerde" id="divSecundarios" href="#">Personajes Secundarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorAzul" id="divOtros" href="#">Otros Personajes</a>
+                    </li>
+                </ul>
+                    <button id="btnConsumo">Cargar Todos los Personajes</button>
+
+            </div>
+        </nav>
+    </div>
+    <!--FIN NAVBAR-->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="contenedorCards"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/js_bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/logica.js"></script>
+</body>
+</html>
